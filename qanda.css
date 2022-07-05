@@ -1,0 +1,67 @@
+.qanda {
+  width: 100%;
+}
+.qanda__inner {
+  max-width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.accordion__question {
+  position: relative;
+  display: block;
+  padding: 14px 40px 14px 15px;
+  width: 100%;
+  font-size: 1rem;
+  cursor: pointer;
+  display: block;
+  color: #707070;
+  font-family: "Hiragino Kaku Gothic ProN";
+  text-align: left;
+}
+.accordion__group:nth-child(odd) {
+  background-color: #c2dde4;
+}
+.accordion__group:nth-child(even) {
+  background-color: #fff;
+}
+.accordion__question::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: currentColor;
+  transform: translateY(-50%);
+}
+.accordion__question::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  display: block;
+  width: 2px;
+  height: 20px;
+  background-color: currentColor;
+  transform: translateY(-50%);
+}
+.accordion__answer {
+  display: none;
+  padding: 15px;
+  color: #707070;
+  font-family: "Hiragino Kaku Gothic ProN";
+  font-size: 0.8rem;
+}
+.accordion__text {
+  margin-bottom: 20px;
+}
+.accordion__question--active::after {
+  content: none;
+}
+@media only screen and (max-width: 767px) {
+}

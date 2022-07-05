@@ -1,0 +1,66 @@
+.about__content {
+  position: relative;
+  z-index: 1;
+}
+.backStr {
+  color: #06565b;
+  opacity: 6%;
+  font-size: 86px;
+  z-index: 0.8;
+  font-weight: 700;
+  font-family: "M PLUS 1p", sans-serif;
+}
+.backStr__head {
+  position: absolute;
+  top: 0%;
+  left: 20%;
+}
+.backStr__middle {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+.backStr__foot {
+  position: absolute;
+  top: 80%;
+  left: 60%;
+}
+.about {
+  width: 100%;
+}
+.about__inner {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 80px;
+}
+.about__text {
+  font-size: 1rem;
+  text-align: center;
+  line-height: 38px;
+}
+.about__text p {
+  font-family: "Stick", sans-serif;
+}
+@media only screen and (max-width: 767px) {
+  .about__inner {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 90%;
+  }
+  .backStr {
+    font-size: 50px;
+  }
+  .backStr__head {
+    position: absolute;
+    left: 0%;
+  }
+  .backStr__middle {
+    position: absolute;
+    left: 5%;
+  }
+  .backStr__foot {
+    position: absolute;
+    left: 10%;
+  }
+}

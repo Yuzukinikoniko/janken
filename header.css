@@ -1,0 +1,214 @@
+.heading__top {
+  font-size: 1.9rem;
+  font-family: "Stick", sans-serif;
+  padding-bottom: 5px;
+  text-align: center;
+  color: #000000;
+}
+
+.heading__bottom {
+  text-align: center;
+  font-size: 14px;
+  color: #000000;
+}
+.level-heading {
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+.header__pc {
+  width: 100%;
+  height: 84px;
+  background-color: #128b8e;
+}
+.header__inner__pc {
+  height: 100%;
+  max-width: 1154px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+}
+.header__sp {
+  display: none;
+}
+.logo {
+  display: block;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.logo__img {
+  width: 113px;
+  height: 53px;
+}
+
+.header__top__sp {
+  display: flex;
+}
+.menu {
+  display: flex;
+  margin-left: auto;
+  color: #fff;
+  font-size: 1.25vw;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.menu__item {
+  padding-right: 25px;
+}
+.menu__link {
+  font-family: "Stick", sans-serif;
+}
+.tel__number {
+  color: #fff;
+  font-size: 1.25vw;
+}
+.tel__time {
+  color: #fff;
+  font-size: 0.8vw;
+}
+.tel {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.header__hidden__sp {
+  display: none;
+  z-index: 100;
+}
+.openbtn {
+  /*ボタン内側の基点となるためrelativeを指定。
+  追従するナビゲーションの場合はfixed＋top、rightといった位置をセットで指定*/
+  position: relative;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+}
+
+/*ボタン内側*/
+.openbtn span {
+  display: inline-block;
+  transition: all 0.4s; /*アニメーションの設定*/
+  position: absolute;
+  left: 14px;
+  height: 3px;
+  border-radius: 2px;
+  background: #fff;
+  width: 45%;
+}
+
+.openbtn span:nth-of-type(1) {
+  top: 15px;
+}
+
+.openbtn span:nth-of-type(2) {
+  top: 23px;
+}
+
+.openbtn span:nth-of-type(3) {
+  top: 31px;
+}
+
+/*activeクラスが付与されると線が回転して×に*/
+
+.openbtn.active span:nth-of-type(1) {
+  top: 18px;
+  left: 18px;
+  transform: translateY(6px) rotate(-45deg);
+  width: 30%;
+}
+.openbtn.active span:nth-of-type(2) {
+  opacity: 0; /*真ん中の線は透過*/
+}
+
+.openbtn.active span:nth-of-type(3) {
+  top: 30px;
+  left: 18px;
+  transform: translateY(-6px) rotate(45deg);
+  width: 30%;
+}
+@media only screen and (min-width: 1300px) {
+  .tel__number {
+    font-size: 18px;
+  }
+  .tel__time {
+    font-size: 13px;
+  }
+  .menu {
+    font-size: 19px;
+  }
+  .header__inner__pc {
+    min-width: 1154px;
+  }
+} /*@media nin-width: 1300px*/
+@media only screen and (max-width: 767px) {
+  .header__pc {
+    display: none;
+  }
+  .header__sp {
+    display: block;
+    height: 84px;
+    background-color: #128b8e;
+  }
+  .header__bottom__sp {
+    display: none;
+  }
+  .header__inner__sp {
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    width: 100%;
+  }
+  .menu {
+    margin-left: auto;
+    font-size: 1.25vw;
+    display: block;
+  }
+  .menu__item {
+    padding-right: 0px;
+    padding-bottom: 20px;
+  }
+  .header__hidden__sp {
+    background: #c2dde4;
+    position: fixed;
+    width: 100%;
+    top: 84px;
+    left: 0px;
+    display: block;
+    padding: 20px;
+    display: none;
+  }
+  .menu__link {
+    font-size: 20px;
+  }
+  .menu__link {
+    position: relative;
+    display: inline-block;
+    padding-left: 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+  .menu__link:before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border: 0;
+    border-top: solid 2.5px #fff;
+    border-right: solid 2.5px #fff;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -4px;
+    transform: rotate(45deg);
+  }
+  .tel__number {
+    font-size: 25px;
+  }
+  .tel__time {
+    font-size: 13px;
+  }
+} /*media max-width*/

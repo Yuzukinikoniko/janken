@@ -1,0 +1,49 @@
+.contact {
+  width: 100%;
+}
+.form__group {
+  margin-bottom: 20px;
+}
+.contact__inner {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 80px;
+}
+.form-control {
+  border: 1px solid #707070;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  height: 30px;
+  width: 400px;
+  margin-top: 10px;
+}
+.form-control__texttarea {
+  border: 1px solid #707070;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  width: 600px;
+  height: 70px;
+  margin-top: 10px;
+}
+.form__date {
+  border: 1px solid #707070;
+  margin-top: 10px;
+}
+.btn {
+  width: 90px;
+  height: 50px;
+  text-align: center;
+  border-radius: 5px;
+}
+.search {
+  background-color: #003a44;
+  color: white;
+}
+
+@media only screen and (max-width: 767px) {
+  .form-control__texttarea {
+    width: 90%;
+  }
+  .form-control {
+    width: 80%;
+  }
+}

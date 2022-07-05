@@ -1,0 +1,46 @@
+.jumbotron {
+  background-image: url("image/23128958_s.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 700px;
+  width: 80%;
+  clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
+}
+.tag__top {
+  background-color: #06565b;
+  padding: 10px 80px;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+}
+.tag__bottom {
+  background-color: #06565b;
+  padding: 10px 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+}
+.tag__text {
+  color: #fff;
+  font-family: "Stick", sans-serif;
+  font-size: 35px;
+}
+@media only screen and (max-width: 767px) {
+  .jumbotron {
+    width: 95%;
+  }
+  .tag__top {
+    padding: 10px 40px;
+    left: 0%;
+  }
+  .tag__bottom {
+    padding: 10px 40px;
+    left: 5%;
+  }
+  .tag__text {
+    font-size: 15px;
+  }
+}
