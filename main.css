@@ -1,0 +1,15 @@
+p,
+a,
+div {
+  font-family: "M PLUS 1p", sans-serif;
+}
+
+@import url("about.css");
+@import url("contact.css");
+@import url("footer.css");
+@import url("future.css");
+@import url("hand.css");
+@import url("header.css");
+@import url("how.css");
+@import url("jumbtron.css");
+@import url("qanda.css");
