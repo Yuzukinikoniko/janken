@@ -45,7 +45,7 @@
   margin-right: 30px;
 }
 .step__right {
-  display: block;
+  display: flex;
   margin-left: 40px;
 }
 .step__text {
@@ -53,6 +53,9 @@
   margin-bottom: auto;
 }
 @media only screen and (max-width: 767px) {
+  .step__right {
+    display: block;
+  }
   .how__inner {
     padding: 20px 10px;
     width: 90%;
